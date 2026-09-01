@@ -1,16 +1,24 @@
+# Dependencies and package-manager caches
 node_modules/
-dist/
 .npm-cache/
 .pnpm-store/
-.DS_Store
-.lumina-data/
-.superpowers/
+
+# Build and test output
+dist/
 coverage/
+.vite/
 *.tsbuildinfo
 *.log
+
+# Local application data and secrets
+.lumina-data/
 .env
 .env.*
 !.env.example
+
+# Local development metadata
+.superpowers/
+.DS_Store
 .idea/
 .vscode/
 *.swp

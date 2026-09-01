@@ -1,6 +1,6 @@
-# Lumina AI Video Editor
+# Lunefold AI Video Editor
 
-Browser-based, desktop-first frontend MVP for an AI-native video editor.
+Browser-based, desktop-first AI video editor with local media-library support.
 
 ## Run
 
@@ -9,6 +9,8 @@ pnpm install --store-dir .pnpm-store
 pnpm dev
 ```
 
+Open the local URL printed by Vite. Do not double-click `index.html`.
+
 ## Verify
 
 ```bash
@@ -16,24 +18,17 @@ pnpm test
 pnpm build
 ```
 
-Open `http://127.0.0.1:5173/`; do not double-click `index.html`.
-
 ## Local media directory
 
-Use a Chromium-based browser and click **选择素材目录**. The first visit requires
-an explicit directory permission. The app stores the directory handle in
-IndexedDB and attempts to restore it on later visits. Local files stay on the
-device and are not uploaded.
+Click **选择素材目录** to choose a local media directory. The application keeps
+the directory and provider settings on this device; local settings, API keys,
+conversation data, dependencies, and build output are excluded from Git.
 
-Supported catalog formats:
+Supported catalogue formats:
 
 - Video: MP4, WebM, MOV
 - Image: JPG, JPEG, PNG, WebP, GIF
 - Audio: MP3, WAV, M4A, AAC, OGG, FLAC
 
-Browsers without the File System Access API keep using the bundled demo media.
-The demo MP4 is the CC0 flower sample published by MDN.
-
-The current milestone supports adjustable panels, playable preview media,
-directory scanning, and editable video/audio tracks. AI providers, timeline
-media insertion, FFmpeg rendering, and export remain later milestones.
+The editor supports adjustable panels, AI conversations, media preview,
+editable video/audio tracks, and a timeline-driven program preview.
