@@ -7,8 +7,36 @@ node_modules/
 dist/
 coverage/
 .vite/
+.cache/
+.turbo/
+.parcel-cache/
+test-results/
+playwright-report/
 *.tsbuildinfo
 *.log
+*.tmp
+*.temp
+*.bak
+
+# Local AI task artifacts and working notes
+.agents/
+.codex/
+.superpowers/
+docs/superpowers/
+artifacts/
+tmp/
+temp/
+
+# Demo assets
+public/demo/
+demo/
+demos/
+
+# Tests kept locally but excluded from the published repository
+**/*.test.*
+**/*.spec.*
+**/__tests__/
+src/test/
 
 # Local application data and secrets
 .lumina-data/
@@ -17,7 +45,6 @@ coverage/
 !.env.example
 
 # Local development metadata
-.superpowers/
 .DS_Store
 .idea/
 .vscode/
